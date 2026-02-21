@@ -1,11 +1,12 @@
 import './Skills.css';
 
+
 function Skills() {
   return (
     <div className="skills-page">
-      <header className="skills-header">
-        
-               <nav className="navbar">
+
+      <nav className="navbar">
+
         <ul className="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
@@ -13,12 +14,14 @@ function Skills() {
           <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
+
+
       <div className='skills-header-content'>
         <h1>My Skills</h1>
         <p className="subtitle">What I specialize in</p>
       </div>
         
-      </header>
+     
 
       <div className="skills-grid">
         {/* Card 1: Frontend */}
@@ -95,8 +98,10 @@ function Skills() {
 
   </div>
 </footer>
+
     </div>
   );
 }
 
-export default Skills;
+export default Skills;      
+
