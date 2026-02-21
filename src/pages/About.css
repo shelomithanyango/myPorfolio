@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #030014;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; /* Ensure scrolling is allowed */
+}
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 5% 50px; /* Top padding leaves room for Nav */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything */
+}
+
+.about-header {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.about-header h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/* THE GRID SYSTEM */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2 parts text, 1 part photo */
+  gap: 25px;
+}
+
+/* CARD STYLING */
+.about-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.card-title {
+  color: #6366f1;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+}
+
+.add-photo-btn {
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid #6366f1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* CONTACT CARD */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 8%;
+  position: fixed;         /* Use fixed so it stays visible as you scroll */
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 9999;           /* High number ensures it sits on top of cards */
+  background: rgba(3, 0, 20, 0.8); /* Slight background so links are readable over content */
+  backdrop-filter: blur(10px);
+}
+.nav-links li {
+  display: block;
+}
+
+.nav-links li a {
+  color: #ffffff !important; 
+  text-decoration: none !important;
+  font-size: 1rem !important;
+  font-family: 'Inter', sans-serif !important;
+  display: inline-block !important; /* Forces the element to respect height/width */
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 10000;
+}
