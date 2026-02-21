@@ -1,9 +1,12 @@
-import "./Skills.css";
+import './Skills.css';
+
 
 function Skills() {
   return (
     <div className="skills-page">
+
       <nav className="navbar">
+
         <ul className="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
@@ -12,40 +15,93 @@ function Skills() {
         </ul>
       </nav>
 
-      <header className="skills-header">
-        <h1 className="skills-title">My Skills</h1>
-      </header>
 
-      <section className="skills-content">
-        {/* Skills Grid */}
-        <div className="skills-grid">
-          {/* Skill Card Example */}
-          <div className="skill-card">
-            <h4 className="skill-name">JavaScript</h4>
-            <p>A versatile programming language used for web development.</p>
+      <div className='skills-header-content'>
+        <h1>My Skills</h1>
+        <p className="subtitle">What I specialize in</p>
+      </div>
+        
+     
+
+      <div className="skills-grid">
+        {/* Card 1: Frontend */}
+        <div className="skill-card">
+          <div className="icon-box react-icon">
+             <i className="fab fa-react"></i> 
           </div>
-
-          {/* Add more skill cards as needed */}
-          <div className="skill-card">
-            <h4 className="skill-name">React</h4>
-            <p>A popular JavaScript library for building user interfaces.</p>
+          <h3>Frontend Development</h3>
+          <p>
+            Specializing in React.js to build interactive, state-driven user interfaces. 
+            Expertise in modern CSS, responsive layouts, and UI/UX implementation.
+          </p>
+          <div className="card-tags">
+            <span className="tag">React</span>
+            <span className="tag">Javascript</span>
+            <span className="tag">HTML5</span>
+            <span className="tag">CSS3</span>
           </div>
-
-          <div className="skill-card">
-            <h4 className="skill-name">Node.js</h4>
-            <p>A JavaScript runtime built on Chrome's V8 engine for server-side development.</p>
-          </div>
-
-          <div className="skill-card">
-            <h4 className="skill-name">CSS</h4>
-            <p>Styling language used to design the look and feel of web pages.</p>
-          </div>
-
-          {/* Add more skills as needed */}
         </div>
-      </section>
+
+        {/* Card 2: Backend */}
+        <div className="skill-card">
+          <div className="icon-box backend-icon">
+             <i className="fab fa-python"></i>
+          </div>
+          <h3>Backend & Logic</h3>
+          <p>
+            Building robust server-side applications using Python and Django. 
+            Focused on clean API design, database management, and scalable logic.
+          </p>
+          <div className="card-tags">
+            <span className="tag">Python</span>
+            <span className="tag">Django</span>
+            <span className="tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        {/* Card 3: Tools */}
+        <div className="skill-card">
+          <div className="icon-box tools-icon">
+            <i className="fas fa-tools"></i>
+          </div>
+          <h3>Tools & Others</h3>
+          <p>
+            Proficient in Git, VS Code, and various development tools.
+            Committed to clean code practices and efficient development workflows.
+          </p>
+          <div className="card-tags">
+            <span className="tag">Git</span>
+            <span className="tag">VS Code</span>
+            <span className="tag">REST APIs</span>
+            <span className="tag">Testing</span>
+          </div>
+        </div>
+      </div>
+
+<footer className="skills-footer">
+  <p>© 2026 Shelomith Anyango</p>
+  <div className="social-links">
+    {/* LinkedIn Logo */}
+    <a href="https://linkedin.com/in/shelomith-anyango" target="_blank" rel="noreferrer" className="social-icon linkedin">
+      <i className="fa-brands fa-linkedin"></i>
+    </a>
+
+    {/* WhatsApp Logo */}
+    <a href="https://wa.me/254741080548" target="_blank" rel="noreferrer" className="social-icon whatsapp">
+      <i className="fa-brands fa-whatsapp"></i>
+    </a>
+
+    {/* GitHub Logo */}
+    <a href="https://github.com/shelomithanyango" target="_blank" rel="noreferrer" className="social-icon github">
+      <i className="fa-brands fa-github"></i>
+    </a>
+
+  </div>
+</footer>
+
     </div>
   );
 }
 
 export default Skills;      
+

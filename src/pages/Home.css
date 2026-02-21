@@ -98,13 +98,13 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertical Center */
-  align-items: center;     /* Horizontal Center */
-  text-align: center;
-  padding: 0 100%;    
-  
-  min-height: 100vh;
+  justify-content: center; /* Centers vertically */
+  align-items: center;     /* Centers horizontally */
+  text-align: center;      /* Centers the text lines */
+  padding: 0 500px;         /* Give it just enough side breathing room */
   width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 
@@ -259,6 +259,7 @@ span {
 .hero h1 {
   animation: fadeInUp 0.8s ease-out 0.2s forwards;
   opacity: 0; /* Starts invisible until animation kicks in */
+  
 }
 
 /* The Developer Title */
