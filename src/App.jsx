@@ -6,7 +6,7 @@ import Skills from "./pages/Skills";
 
 function App() {
   return (
-    <Router>
+   
       <div className="app">
         <Routes>
 
@@ -21,7 +21,7 @@ function App() {
 
         </Routes>
       </div>
-    </Router>
+    
   );
 }
 

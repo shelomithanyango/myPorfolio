@@ -1,0 +1,187 @@
+.skills-page {
+  background-color: #030014;
+  min-height: 100vh;
+  padding: 120px 8% 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.skills-header h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.nav-links  {
+  display: flex;          
+  flex-direction: row;    
+  list-style: none;       
+  gap: 2rem;              
+  margin: 0;
+  padding: 0 1300px;
+  align-items: right;
+  color: antiquewhite !important;
+
+}
+.nav-links li a {
+  color: antiquewhite !important;
+  text-decoration: none; 
+  font-weight: 500;
+  transition: color 0.3s ease; 
+}
+
+.nav-links li a:hover{
+  margin: 0;  
+  color: orange !important;       
+}
+.skills-header-content h1 {
+ display: flex;
+  align-items: center; /* Vertically aligns text in the middle */
+  gap: 10px;
+  
+}
+
+/* THE 3-COLUMN GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 40px;
+  max-width: 1300px;
+  width: 100%;
+  align-items: center;
+    justify-items: center;
+   
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  padding: 45px;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+  width: 15cm;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.skill-card p {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.card-tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: rgba(99, 102, 241, 0.1);
+  color: #818cf8;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* FOOTER */
+.skills-footer {
+  margin-top: 80px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 40px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; /* Size of the logo */
+  color: white;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+}
+
+/* Hover Effects with Brand Colors */
+.social-icon.linkedin:hover {
+  background: #0077b5;
+  box-shadow: 0 0 20px rgba(0, 119, 181, 0.5);
+}
+
+.social-icon.whatsapp:hover {
+  background: #25d366;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+}
+
+.social-icon.github:hover {
+  background: #333;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.social-icon:hover {
+  transform: scale(1.1) translateY(-5px);
+  border-color: transparent;
+}
+
+
+
+/* RESPONSIVE: Stack on small screens */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

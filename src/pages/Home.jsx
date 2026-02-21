@@ -28,7 +28,7 @@ function Home() {
         </p>
 
         <div className="hero-btns">
-          <button className="hero-butn1">View My Skills</button>
+          <button className="hero-butn1"><a href="/skills">View My Skills</a></button>
           <button className="hero-butn2">Get in Touch</button>
         </div>
       </section>
