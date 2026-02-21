@@ -1,0 +1,125 @@
+.contact-page {
+  background: #030014;
+  min-height: 100vh;
+  padding: 120px 8% 50px;
+  color: white;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  align-self: center;
+  padding-left: 0 200px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 20cm;
+}
+.nav-links  {
+  display: flex;          
+  flex-direction: row;    
+  list-style: none;       
+  gap: 2rem;              
+  margin: 0;
+  padding: 0 1300px;
+  align-items: right;
+  color: antiquewhite !important;
+
+}
+.nav-links li a {
+  color: antiquewhite !important;
+  text-decoration: none; 
+  font-weight: 500;
+  transition: color 0.3s ease; 
+}
+
+.nav-links li a:hover{
+  margin: 0;  
+  color: orange !important;       
+}
+
+/* Info Cards Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(99, 102, 241, 0.1);
+  color: #818cf8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 1.2rem;
+}
+
+/* Form Styling */
+.form-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 50px;
+  border-radius: 24px;
+}
+
+.form-card h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* THIS ALIGNS NAME & EMAIL ON THE SAME LINE */
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1; /* Makes inputs grow equally */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+}
+
+textarea { height: 150px; resize: none; }
+
+.send-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-grid, .form-row { flex-direction: column; grid-template-columns: 1fr; }
+}

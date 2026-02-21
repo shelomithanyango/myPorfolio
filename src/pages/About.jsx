@@ -37,7 +37,7 @@ function About() {
             </p>
 
             <div className="location">
-              <span>📍 Nairobi, Kenya</span>
+              <span>📍 Bungoma, Kenya</span>
             </div>
           </div>
 
