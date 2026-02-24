@@ -40,20 +40,20 @@ function Contacts() {
             <div className="form-row">
               <div className="form-group">
                 <label>Your Name</label>
-                <input type="text" placeholder="John Doe" />
+                <input type="text" placeholder="Cielo" />
               </div>
               <div className="form-group">
                 <label>Your Email</label>
-                <input type="email" placeholder="john@example.com" />
+                <input type="email" placeholder="cielo@example.com" />
               </div>
             </div>
             <div className="form-group">
               <label>Subject</label>
-              <input type="text" placeholder="Project Inquiry" />
+              <input type="text" placeholder="your Inquiry" />
             </div>
             <div className="form-group">
               <label>Message</label>
-              <textarea placeholder="Tell me about your project or inquiry..."></textarea>
+              <textarea placeholder="Tell me about your inquiry..."></textarea>
             </div>
             <button type="submit" className="send-btn">Send Message</button>
           </form>
