@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="hero">
       <nav className="navbar">
-        <h1 className="logo">Portfolio</h1>
+        <h1 className="logo">Cielo</h1>
         <ul className="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
